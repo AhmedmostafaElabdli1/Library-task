@@ -1,0 +1,13 @@
+01:23:09 [http-nio-8080-exec-3] INFO  com.code81.library.Util.UserActivityLogger - User 'admin' performed action: Created author: Ahmed Mostafa
+14:11:47 [http-nio-8080-exec-1] INFO  com.code81.library.Util.UserActivityLogger - User 'admin' performed action: Created author: Ahmed Mostafa
+15:52:05 [http-nio-8080-exec-2] INFO  com.code81.library.Util.UserActivityLogger - User 'admin' performed action: Created author: Ahmed Mostafa
+15:57:41 [http-nio-8080-exec-3] INFO  com.code81.library.Util.UserActivityLogger - User 'admin' performed action: Viewed all authors
+15:58:54 [http-nio-8080-exec-5] INFO  com.code81.library.Util.UserActivityLogger - User 'admin' performed action: Created author: Ahmed Mostafa
+16:00:33 [http-nio-8080-exec-10] INFO  com.code81.library.Util.UserActivityLogger - User 'admin' performed action: Created author: Ahmed Mostafa
+16:01:18 [http-nio-8080-exec-2] INFO  com.code81.library.Util.UserActivityLogger - User 'admin' performed action: Created author: Ahmed Mostafa
+16:12:28 [http-nio-8080-exec-5] INFO  com.code81.library.Util.UserActivityLogger - User 'admin' performed action: Viewed all authors
+16:50:43 [http-nio-8080-exec-1] INFO  com.code81.library.Util.UserActivityLogger - User 'admin' performed action: Created author: Ahmed Mostafa
+17:24:39 [http-nio-8080-exec-2] INFO  com.code81.library.Util.UserActivityLogger - User 'admin.user' performed action: Created author: Ahmed Mostafa
+17:24:53 [http-nio-8080-exec-3] INFO  com.code81.library.Util.UserActivityLogger - User 'admin.user' performed action: Created author: Ahmed Ismael
+17:25:30 [http-nio-8080-exec-6] INFO  com.code81.library.Util.UserActivityLogger - User 'admin.user' performed action: Created user: alihassan
+17:26:26 [http-nio-8080-exec-7] INFO  com.code81.library.Util.UserActivityLogger - User 'admin.user' performed action: Created user: alshassan

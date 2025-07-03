@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="USER_ACTIVITY" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/user-activity.log</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>logs/user-activity.%i.log</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>1</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>10KB</maxFileSize>
+        </triggeringPolicy>
+
+        <encoder>
+            <pattern>%d{HH:mm:ss} [%thread] %-5level %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.code81.library.Util.UserActivityLogger" level="INFO" additivity="false">
+        <appender-ref ref="USER_ACTIVITY"/>
+    </logger>
+
+</configuration>
