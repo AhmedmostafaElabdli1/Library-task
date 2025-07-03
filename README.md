@@ -130,11 +130,9 @@
 # How RUN Application 
 
 
-### -First Create Author , Publisher, category 
-### - Then Create Book
-## For Borrow Transaction
-
-### -Create Borrow
+### -First Run Sqldata Script that is generate data without user.
+### -when app startup, that create users with deffernt roles.
 ### - then Make Transaction if your role allow that
+### - Use postman collections to use system.
 
-# I provided Postman Collections in Repository
+# I provided Postman Collections in Repository 
