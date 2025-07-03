@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "e17a22f8-b0c8-4066-ba70-fa6aa0fc1565",
+		"name": "Library System - Users",
+		"description": "Manage users in the library system: create, view, update, delete",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46363800"
+	},
+	"item": [
+		{
+			"name": "Create User (STAFF)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Ahmed\",\n  \"lastName\": \"Staff\",\n  \"username\": \"ahmedstaff\",\n  \"email\": \"ahmed.staff@library.com\",\n  \"password\": \"staff1234\",\n  \"role\": \"STAFF\",\n  \"nid\": \"12345678901234\",\n  \"phone\": \"01012345678\",\n  \"address\": \"Branch Office\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User (ID = 1)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Updated\",\n  \"lastName\": \"Staff\",\n  \"username\": \"ahmedstaff\",\n  \"email\": \"updated.staff@library.com\",\n  \"password\": \"newpass123\",\n  \"role\": \"STAFF\",\n  \"nid\": \"12345678901234\",\n  \"phone\": \"01098765432\",\n  \"address\": \"New Branch\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User (ID = 1)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

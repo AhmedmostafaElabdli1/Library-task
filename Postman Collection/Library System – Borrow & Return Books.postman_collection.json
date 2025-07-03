@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "e105d358-af36-4efb-bf2b-80ba48a9d07d",
+		"name": "Library System – Borrow & Return Books",
+		"description": "Endpoints for borrowing and returning books only",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46363800"
+	},
+	"item": [
+		{
+			"name": "Borrow Book",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46cGFzc3dvcmQ=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/transactions/borrow?borrowerId=1&bookId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions",
+						"borrow"
+					],
+					"query": [
+						{
+							"key": "borrowerId",
+							"value": "1"
+						},
+						{
+							"key": "bookId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return Book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46cGFzc3dvcmQ=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/transactions/return/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions",
+						"return",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

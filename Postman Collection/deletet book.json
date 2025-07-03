@@ -1,0 +1,35 @@
+{
+  "info": {
+    "name": "Library System – Delete Book",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Delete Book by ID",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic {{basicAuthToken}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/books/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "books", "1"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "basicAuthToken",
+      "value": "YWRtaW46cGFzc3dvcmQ="  // admin:password in Base64
+    }
+  ]
+}
