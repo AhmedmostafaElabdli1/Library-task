@@ -2,8 +2,12 @@
 
 
 # Database Design
-![Untitled Diagram drawio](https://github.com/user-attachments/assets/31ec784d-b435-4ab8-b74e-c7f6e0c483f0)
 
+
+## ERD
+![Untitled Diagram drawio](https://github.com/user-attachments/assets/31ec784d-b435-4ab8-b74e-c7f6e0c483f0)
+## ERD improved
+![image](https://github.com/user-attachments/assets/d913cff1-b84a-4e4a-8144-371f4d3be46f)
 
 ### 1. Book Entity Relationships — Summary Table**
 `Book` entity with the corresponding JPA annotations and descriptions:
