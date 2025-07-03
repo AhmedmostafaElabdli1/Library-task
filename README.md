@@ -2,6 +2,8 @@
 
 
 # Database Design
+![Untitled Diagram drawio](https://github.com/user-attachments/assets/31ec784d-b435-4ab8-b74e-c7f6e0c483f0)
+
 
 ### 1. Book Entity Relationships — Summary Table**
 `Book` entity with the corresponding JPA annotations and descriptions:
