@@ -44,7 +44,7 @@
 
 
 
-# Why i don't Give you Sqlscripte For Sample Data ?
+# Why i don't like  you use Sqlscripte For Sample Data ?
 
 
 - **Auditing fields are auto-managed by JPA:**  
