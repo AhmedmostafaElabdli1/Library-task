@@ -5,6 +5,7 @@
 
 
 ## ERD improved
+- Schema Generated and handled By Spring JPA.
 ![image](https://github.com/user-attachments/assets/d913cff1-b84a-4e4a-8144-371f4d3be46f)
 
 - Can improve System by add Relation between User and borrowtransaction to know who did this transaction.
